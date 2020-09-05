@@ -1,5 +1,5 @@
 let backref_open = document.getElementById("backref_open");
-let modal_form  = document.getElementsByClassName("modal-backref")[0];
+let modal_form = document.getElementsByClassName("modal-backref")[0];
 let close_popup = document.getElementById("modal-backref-close");
 
 
