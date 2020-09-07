@@ -119,6 +119,11 @@ ul, li {
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
+.modal-display {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
 .btn, input[type="text"], input[type="password"], input[type="email"], input[type="search"], textarea {
     display: block;
     border: none;
@@ -219,7 +224,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
     height: 64px;
 }
 
-logo a:focus {
+.logo a:focus {
     outline: none;
     -webkit-box-shadow: 4px 4px 2px 0 rgba(255, 255, 255, 0.75), -4px -4px 2px 0 rgba(255, 255, 255, 0.75);
     -moz-box-shadow:    4px 4px 2px 0 rgba(255, 255, 255, 0.75), -4px -4px 2px 0 rgba(255, 255, 255, 0.75);
@@ -1442,21 +1447,21 @@ header {
     opacity: 1;
 }
 
+.form-label__radio input:focus,
+.form-label__radio input:checked:focus + span,
+.form-label__radio input:focus + span {
+    outline: none;
+    -webkit-box-shadow: 4px 4px 2px 0 rgba(255, 255, 255, 0.75), -4px -4px 2px 0 rgba(255, 255, 255, 0.75);
+    -moz-box-shadow:    4px 4px 2px 0 rgba(255, 255, 255, 0.75), -4px -4px 2px 0 rgba(255, 255, 255, 0.75);
+    box-shadow:         4px 4px 2px 0 rgba(255, 255, 255, 0.75), -4px -4px 2px 0 rgba(255, 255, 255, 0.75);
+}
+
 .form-label__radio input:hover + span {
     border-color: rgba(255, 255, 255, 1);
 }
 
 .form-label__radio input:hover + span::after {
     background-color: rgba(255, 255, 255, 1);
-}
-
-
-.form-label__radio input:focus + span,
-.form-label__radio input:checked:focus + span {
-    outline: none;
-    -webkit-box-shadow: 4px 4px 2px 0 rgba(255, 255, 255, 0.75), -4px -4px 2px 0 rgba(255, 255, 255, 0.75);
-    -moz-box-shadow:    4px 4px 2px 0 rgba(255, 255, 255, 0.75), -4px -4px 2px 0 rgba(255, 255, 255, 0.75);
-    box-shadow:         4px 4px 2px 0 rgba(255, 255, 255, 0.75), -4px -4px 2px 0 rgba(255, 255, 255, 0.75);
 }
 
 .form-label__checkbox {
@@ -1491,6 +1496,7 @@ header {
     background-position: 0 1px;
 }
 
+.form-label__checkbox input:focus,
 .form-label__checkbox input:focus + span,
 .form-label__checkbox input:checked:focus + span {
     outline: none;
@@ -1795,16 +1801,17 @@ header {
     border-radius: 27px;
 }
 
-.modal-backref a {
+.modal-backref .btn-close {
     position: absolute;
     top: 16px;
     right: 14px;
     width: 18px;
     height: 17px;
     cursor: pointer;
+    padding: 0;
 }
 
-.modal .btn-red:focus, .modal-backref a:focus {
+.modal .btn-red:focus, .modal-backref .btn-close:focus {
     outline: none;
     -webkit-box-shadow: 4px 4px 2px 0 rgba(246, 181, 165, 0.75), -4px -4px 2px 0 rgba(246, 181, 165, 0.75);
     -moz-box-shadow:    4px 4px 2px 0 rgba(246, 181, 165, 0.75), -4px -4px 2px 0 rgba(246, 181, 165, 0.75);
